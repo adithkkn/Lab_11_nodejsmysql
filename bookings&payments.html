@@ -1,0 +1,323 @@
+
+<!DOCTYPE html>
+<html lang="">
+<!-- To declare your language - read more here: https://www.w3.org/International/questions/qa-html-language-declarations -->
+
+<head><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <link rel="stylesheet" href="node_modules/mdbootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="node_modules/mdbootstrap/css/mdb.min.css">
+  <link rel="stylesheet" href="node_modules/mdbootstrap/css/style.css">
+  <script type="text/javascript" src="node_modules/mdbootstrap/js/jquery.min.js"></script>
+  <script type="text/javascript" src="node_modules/mdbootstrap/js/popper.min.js"></script>
+  <script type="text/javascript" src="node_modules/mdbootstrap/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="node_modules/mdbootstrap/js/mdb.min.js"></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      <!-- Bootstrap CSS -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+      <link rel="stylesheet" type="text/css" href="../css/hom.css">
+      <script type="text/javascript" src="../js/home.js"></script>
+      <!-- Font Awesome -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    rel="stylesheet"
+  />
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+  <link
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    rel="stylesheet"
+  />
+  <!-- MDB -->
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.1/mdb.min.css"
+    rel="stylesheet"
+  />
+  </head>
+<script>
+          var bleep = new Audio();
+          bleep.src="button.mp3";
+      </script>
+
+<title>Booking And Payments</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+</head>
+<body id="top">
+  <script src="validations.js"></script>
+
+
+
+
+
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- #############################################http://127.0.0.1:5501/Railway.html################################################### -->
+<div class="wrapper row0">
+  <div id="topbar" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <ul class="nospace">
+      <li><i class="fa fa-envelope-o"></i> info@irctc.in</li>
+      <li><a href="bookings&payments.html"><i class="fa fa-lg fa-home"></i></a></li>
+      <li><a href="#" title="Help Centre"><i class="fa fa-life-bouy"></i></a></li>
+      <li><a href="login1.html" title="Login"><i class="fa fa-lg fa-sign-in"></i></a></li>
+      <li><a href="#" title="Sign Up"><i class="fa fa-lg fa-edit"></i></a></li>
+    </ul>
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row1">
+  <div class="modal fade" id="modalRegisterForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Sign up</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <i class="fas fa-user prefix grey-text"></i>
+          <input type="text" id="fname" class="form-control validate">
+          <label data-error="wrong" data-success="right" for="orangeForm-name">Your name</label>
+        
+        </div>
+        <div class="md-form mb-5">
+          <i class="fas fa-envelope prefix grey-text"></i>
+          <input type="email" id="email" class="form-control validate">
+          <label data-error="wrong" data-success="right" for="orangeForm-email">Your email</label>
+        </div>
+         <div class="md-form mb-5">
+          <i class="fas fa-envelope prefix grey-text"></i>
+          <input type="text" id="pno" class="form-control validate">
+          <label data-error="wrong" data-success="right" for="orangeForm-email">phone</label>
+        </div>
+        <div class="md-form mb-4">
+          <i class="fas fa-lock prefix grey-text"></i>
+          <input type="password" id="pass" class="form-control validate">
+          <label data-error="wrong" data-success="right" for="orangeForm-pass">Your password</label>
+        </div>
+
+      </div>
+      <div class="modal-footer d-flex justify-content-center">
+        <button class="btn btn-deep-orange" id="reg">Sign up</button>
+      </div>
+    </div>
+  </div>
+</div>
+  <header id="header" class="hoc clear">
+    <section> 
+      <!-- ################################################################################################ -->
+      <div><i class="fa fa-phone"></i> +123 456 7890</div>
+      <div>
+        <h1 id="logo"><a >IRCTC Bookings And Payments </a></h1>
+      </div>
+      <div>
+        <form class="clear" method="post" action="#">
+          <fieldset>
+            <legend>Search:</legend>
+            <input type="search" value="" placeholder="Search Here&hellip;">
+            <button class="fa fa-search" type="submit" title="Search"><em>Search</em></button>
+          </fieldset>
+        </form>
+      </div>
+      <!-- ################################################################################################ -->
+    </section>
+    <nav id="mainav"> 
+      <!-- ################################################################################################ -->
+      <ul class="clear">
+        <li class="active"><a href="bookings&payments.html" onmousedown="bleep.play()">Home</a></li>
+       
+          <a href=""  data-toggle="modal" data-target="#modalRegisterForm">Register</a>
+    
+      
+        <li><a class="drop" href="#"onmousedown="bleep.play()">CONTACT US</a>
+          <ul>
+            <li><a href="#"></a></li>
+            <li><a class="drop" href="#"></a>
+              <ul>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+              </ul>
+            </li>
+            <li><a href="#"></a></li>
+          </ul>
+        </li>
+        <li><a href="http://127.0.0.1:5500/railway.html"onmousedown="bleep.play()">BOOKING INFO</a></li>
+        <li><a href="#"onmousedown="bleep.play()">CHARTS / VACANCY</a></li>
+        <li><a href="http://127.0.0.1:5501/Railway.xml"onmousedown="bleep.play()">Booking Details</a></li>
+        <li><a href="#"></a></li>
+      </ul>
+      <!-- ################################################################################################ -->
+    </nav>
+  </header>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="bgded" style="background-image:url('01.jfif');">
+  <div id="pageintro" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <article>
+      <h3 class="heading">BOOK TICKETS</h3>
+      <p></p>
+      <footer><a class="btn" href="bkp\login1.html"onmousedown="bleep.play()">BOOK NOW</a></footer>
+    </article>
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row3">
+  
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row3">
+  <section class="hoc container clear"> 
+    <!-- ################################################################################################ -->
+    <div class="sectiontitle">
+      <h6 class="heading">Holiday Bookings </h6>
+      <p></p>
+    </div>
+    <div class="group latest">
+      <article class="one_half first"><a href="#"><img src="images/demo/474x356.png" alt=""></a>
+        <div class="excerpt">
+          <h6 class="heading">Refund Rules </h6>
+          <p>&hellip;</p>
+          <div class="clear">
+            <footer class=" fl_right"><a href="#">Read More</a></footer>
+            <ul class="nospace meta fl_left">
+              <li><i class="fa fa-user"></i> <a href="#">Admin</a></li>
+              <li><i class="fa fa-tag"></i> <a href="#">Tag Name</a></li>
+            </ul>
+          </div>
+        </div>
+      </article>
+      <article class="one_half"><a href="#"><img src="images/demo/474x356.png" alt=""></a>
+        <div class="excerpt">
+          <h6 class="heading">Wifi Railway Stations</h6>
+          <p>&hellip;</p>
+          <div class="clear">
+            <footer class=" fl_right"><a href="#">Read More</a></footer>
+            <ul class="nospace meta fl_left">
+              <li><i class="fa fa-user"></i> <a href="#">Admin</a></li>
+              <li><i class="fa fa-tag"></i> <a href="#">Tag Name</a></li>
+            </ul>
+          </div>
+        </div>
+      </article>
+    </div>
+    <footer class="center"><a class="btn" href="#"onmousedown="bleep.play()">ENQUIRIES &raquo;</a></footer>
+    <!-- ################################################################################################ -->
+  </section>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper coloured">
+  <article class="hoc cta clear"> 
+    <!-- ################################################################################################ -->
+    <h6 class="three_quarter first">ABOUT US</h6>
+    <footer class="one_quarter"><a class="btn" href="#">IRCTC E-wallet &raquo;</a></footer>
+    <!-- ################################################################################################ -->
+  </article>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row4">
+  <footer id="footer" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <div class="one_quarter first">
+      <h6 class="heading">IRTC Trains</h6>
+      <ul class="nospace btmspace-30 linklist contact">
+        <li><i class="fa fa-map-marker"></i>
+          <address>
+          Street Name &amp; B-148, 11th Floor, Statesman House, Barakhamba Road, New Delhi 110001.
+          </address>
+        </li>
+        <li><i class="fa fa-phone"></i> +00 (123) 456 7890</li>
+        <li><i class="fa fa-envelope-o"></i> info@irctc.in</li>
+      </ul>
+      <ul class="faico clear">
+        <li><a class="faicon-facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+        <li><a class="faicon-twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+        <li><a class="faicon-dribble" href="#"><i class="fa fa-dribbble"></i></a></li>
+        <li><a class="faicon-linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+      </ul>
+    </div>
+    <div class="one_quarter">
+      <h6 class="heading">Mobile Zone</h6>
+      <ul class="nospace linklist">
+        <li><a href="#">policies</a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+      </ul>
+    </div>
+    <div class="one_quarter">
+      <h6 class="heading">Refund Rules</h6>
+      <article class="btmspace-30">
+        <h6 class="nospace font-x1"><a href="#"></a></h6>
+        <time class="smallfont" datetime="2045-04-06"><sup></sup></time>
+        <p>&hellip;</p>
+      </article>
+      <article>
+        <h6 class="nospace font-x1"><a href="#"></a></h6>
+        <time class="smallfont" datetime="2045-04-05"><sup></sup></time>
+        <p>&hellip;</p>
+      </article>
+    </div>
+    <div class="one_quarter">
+      <h6 class="heading">General Information</h6>
+      <p class="nospace btmspace-15"></p>
+      <form method="post" action="#">
+        <fieldset>
+          <legend>Newsletter:</legend>
+          <input class="btmspace-15" type="text" value="" placeholder="Name">
+          <input class="btmspace-15" type="text" value="" placeholder="Email">
+          <button type="submit" value="submit">Submit</button>
+        </fieldset>
+      </form>
+    </div>
+    <!-- ################################################################################################ -->
+  </footer>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row5">
+  <div id="copyright" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <p class="fl_left">Copyright &copy; 2018 - All Rights Reserved - <a href="#">Domain Name</a></p>
+    <p class="fl_right">Template by <a target="_blank" href="https://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
+<!-- JAVASCRIPTS -->
+<script src="layout/scripts/jquery.min.js"></script>
+<script src="layout/scripts/jquery.backtotop.js"></script>
+<script src="layout/scripts/jquery.mobilemenu.js"></script>
+</body>
+</html>
